@@ -4,6 +4,7 @@
     <title>Page Title</title>
   </head>
   <body>
+    <script>
     function WriteToFile(passForm) {
  
     set fso = CreateObject("Scripting.FileSystemObject"); 
@@ -16,6 +17,7 @@
     s.writeline("-----------------------------");
     s.Close();
     }
+    </script>
     <form onSubmit="WriteToFile(this)">
       <label>Passord:</label>
       <input type="text" name="PassWord" id="pwd" size="20"> 
