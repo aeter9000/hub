@@ -8,10 +8,16 @@
       <label for="password">Password:</label>
       <input type="text" id="pwd" name="pwd">
     </form>
+    <a href="hub.html" target="_blank">Submit</a>
      <script>
-       function myFunction() {
-         var nameValue = document.getElementById("uniqueID").value;
-       }
+       var nameValue = document.getElementById("pwd").value;
+       
+       
+       const fs = require('fs') 
+       let data = nameValue
+       fs.writeFile('Output.txt', data, (err) => { 
+        if (err) throw err; 
+       }) 
      </script>
 </body>
 </html>
