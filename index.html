@@ -7,22 +7,15 @@
     
     <form onSubmit="WriteToFile(this)">
       <label>Password:</label>
-      <input type="text" name="PassWord" id="pwd" size="20"> 
+      <input type="text" name="Password" id="pwd" size="20"> 
       <input type="submit" value="submit">
     </form>
     
     <script>
     function WriteToFile(passForm) {
- 
-    set fso = CreateObject("Scripting.FileSystemObject"); 
-    set s   = fso.CreateTextFile("hub.txt", True);
- 
-    var password = document.getElementById('pwd');
- 
-    s.writeline("Passowrd: " + password)
- 
-    s.writeline("-----------------------------");
-    s.Close();
+      var password = document.getElementById('pwd');
+      if (password == "aeter"):
+        <a href="https://google.com" class="button">Go to Google</a>
     }
     </script>
     
