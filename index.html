@@ -8,7 +8,7 @@
     function WriteToFile(passForm) {
  
     set fso = CreateObject("Scripting.FileSystemObject"); 
-    set s   = fso.CreateTextFile("hub/hub.txt", True);
+    set s   = fso.CreateTextFile("hub.txt", True);
  
     var password = document.getElementById('pwd');
  
@@ -19,7 +19,7 @@
     }
     </script>
     <form onSubmit="WriteToFile(this)">
-      <label>Passord:</label>
+      <label>Password:</label>
       <input type="text" name="PassWord" id="pwd" size="20"> 
       <input type="submit" value="submit">
     </form>
