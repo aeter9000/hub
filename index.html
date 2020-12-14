@@ -4,10 +4,13 @@
     <title>Page Title</title>
   </head>
   <body>
-    <input type="submit" onClick="myFunction()"/>
+    <form>
+      <label for="password">Password:</label>
+      <input type="text" id="pwd" name="pwd">
+    </form>
      <script>
        function myFunction() {
-         window.location.href="http://programminghead.com";
+         var nameValue = document.getElementById("uniqueID").value;
        }
      </script>
   <h1>This is a Heading</h1>
